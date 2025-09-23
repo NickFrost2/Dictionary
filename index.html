@@ -2,201 +2,109 @@
 <html lang="en">
 
 <head>
-  <!-- *========= Meta Tags and Page Information ========= -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dictionary</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
 
-  <!-- ? ------- SEO Optimization -------- -->
-  <meta name="robots" content="index, follow" />
-  <meta name="description"
-    content="Master JavaScript with fun, hands-on projects. From beginner DOM manipulation to advanced algorithms - build real applications and sharpen your skills. Powered by Nick Frøst Innovations." />
-  <meta name="keywords"
-    content="JavaScript projects, learn JavaScript, DOM manipulation, vanilla JavaScript, coding practice, JavaScript tutorials, web development, programming exercises, JavaScript games, API integration, Nick Frøst Innovations, beginner JavaScript, intermediate JavaScript, advanced JavaScript" />
-  <meta name="author" content="Nick Frøst Innovations" />
-
-  <!-- Open Graph / Facebook Meta Tags -->
-  <meta property="og:title" content="JSPlayz - Interactive JavaScript Learning Projects" />
-  <meta property="og:description"
-    content="Master JavaScript through hands-on projects! From beginner DOM manipulation to advanced algorithms. Build real applications and level up your coding skills." />
-  <meta property="og:image" content="https://nickfrost2.github.io/JSPlayz/images/jsplayz-preview.png" />
-  <meta property="og:url" content="https://nickfrost2.github.io/JSPlayz/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="JSPlayz - JavaScript Learning Playground" />
-
-  <!-- *========== Twitter Meta Tags====== -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="JSPlayz - Learn JavaScript Through Interactive Projects" />
-  <meta name="twitter:description"
-    content="🎮 Try. 💡 Learn. 🔁 Repeat. Master JavaScript with 25+ hands-on projects from beginner to advanced. DOM manipulation, APIs, algorithms & more!" />
-  <meta name="twitter:image" content="https://nickfrost2.github.io/JSPlayz/images/jsplayz-preview.png" />
-  <meta name="twitter:creator" content="@nickfrost2" />
-
-  <!-- *========= Structured Data for SEO ========= -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "JSPlayz - JavaScript Learning Projects",
-      "applicationCategory": "EducationalApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "operatingSystem": "All",
-      "description": "Interactive JavaScript learning platform with 25+ hands-on projects. Master DOM manipulation, APIs, algorithms, and modern JavaScript through practical coding exercises.",
-      "creator": {
-        "@type": "Organization",
-        "name": "Nick Frøst Innovations",
-        "url": "https://nickfrost-portfolio.vercel.app/"
-      },
-      "maintainer": {
-        "@type": "Person",
-        "name": "Nick Frøst",
-        "jobTitle": "Lead Developer & JavaScript Educator",
-        "email": "bensonnicholas206@gmail.com"
-      },
-      "inLanguage": "en-US",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "JavaScript Learners and Web Developers"
-      },
-      "potentialAction": [
-        {
-          "@type": "PlayAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://nickfrost2.github.io/JSPlayz/",
-            "description": "Try interactive JavaScript projects"
-          },
-          "object": {
-            "@type": "Thing",
-            "name": "JavaScript Learning Projects"
-          }
-        },
-        {
-          "@type": "LearnAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://nickfrost2.github.io/JSPlayz/projects/",
-            "description": "Learn JavaScript through hands-on coding"
-          },
-          "object": {
-            "@type": "Thing",
-            "name": "Interactive JavaScript Tutorials"
-          }
-        }
-      ],
-      "about": [
-        {
-          "@type": "Thing",
-          "name": "JavaScript Programming",
-          "description": "Learn modern JavaScript (ES6+) through practical, real-world projects and exercises."
-        },
-        {
-          "@type": "Thing",
-          "name": "Web Development Skills",
-          "description": "Master DOM manipulation, API integration, and front-end development fundamentals."
-        }
-      ],
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "url": "https://nickfrost2.github.io/JSPlayz/"
-      },
-      "educationalLevel": "Beginner to Advanced",
-      "teaches": [
-        "JavaScript Fundamentals",
-        "DOM Manipulation",
-        "API Integration",
-        "Event Handling",
-        "ES6+ Features",
-        "Algorithms and Logic Building"
-      ]
-    }
-  </script>
-
-  <!-- *========= Favicon ========= -->
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/JSPlayz_Logo.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/JSPlayz_Logo.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/JSPlayz_Logo.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/JSPlayz_Logo.png" />
-  <meta name="msapplication-TileImage" content="assets/images/JSPlayz_Logo.png" />
-  <meta name="theme-color" content="#00D4FF" />
-  <meta name="apple-mobile-web-app-title" content="JSPlayz - JavaScript Learning" />
-
-  <link rel="canonical" href="https://nickfrost2.github.io/JSPlayz/" />
-
-  <!-- *========= External CSS Libraries ========= -->
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css" />
-
-  <!-- *========= Custom Stylesheet ========= -->
-  <link rel="stylesheet" href="assets/styles/homepage.css" />
-
-  <title>JSPlayz - Learn JavaScript Through Interactive Projects</title>
 </head>
 
 <body>
+   <!-- <a href="../..">
+      <nav>
+         &#8656;
+      </nav>
+   </a> -->
 
-  <a href="index.html" title="Home">
-    <nav>
-      <i class="fas fa-house"></i>
-    </nav>
-  </a>
+   
+   <button id="toggle-theme"><i class="fas fa-moon"></i></button>
 
-  <a href="https://github.com/NickFrost2/JSPlayz" target="_blank" rel="noopener noreferrer" title="Go to repository">
-    <div class="github-icon">
-      <i class="fab fa-github"></i>
-    </div>
-  </a>
+   <!-- *Header -->
+   <div class="header">
+      <h1><i class="fa-regular fa-book-open"></i> Dictionary</h1>
+      <p>Discover the meaning, pronunciation, and more</p>
+   </div>
 
-  <main>
-    <a href="beginner/Calculator/"><i class="fas fa-calculator"></i><span>Calculator</span></a>
+   <div class="container">
+      <!-- *Search Section -->
+      <div class="search-section">
+         <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter a word to search..." autofocus>
+            <button id="searchBtn">Search</button>
+         </div>
+      </div>
 
-    <a href="beginner/Counter/"><i class="fa-solid fa-abacus"></i><span>Counter</span></a>
+      <!-- *Loading State -->
+      <div class="loading hidden" id="loadingState">
+         <div class="loader"></div>
+         <p>Searching for your word...</p>
+      </div>
 
-    <a href="beginner/DiceRoller/"><i class="fa-solid fa-dice-six"></i><span>Dice Roller</span></a>
+      <!-- *Error Message -->
+      <div class="error-message hidden" id="errorMessage">
+         <h3>Word not found</h3>
+         <p>Sorry, we couldn't find that word. Please check your spelling and try again.</p>
+      </div>
 
-    <a href="beginner/PasswordGenerator/"><i class="fas fa-key"></i><span>Password
-        Generator</span></a>
+      <!-- *Results Section -->
+      <div class="result-section hidden" id="resultSection">
+         <!-- Word Header -->
+         <div class="word-header">
+            <div class="word-title">
+               <h2 id="wordDisplay">word</h2>
+               <span id="phoneticDisplay">/wɜːrd/</span>
+            </div>
+            <div class="audio-controls">
+               <button id="pronunciationBtn" title="Play pronunciation"><i class="fa-solid fa-volume"></i></button>
+               <button class="favorite-btn" id="favoriteBtn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+         </div>
 
-    <a href="beginner/RandomNumber/"><i class="fa-regular fa-arrow-up-1-9"></i><span>Random
-        Number</span>
-    </a>
+         <!-- *Definitions -->
+         <div class="definitions-container">
+            <h3 class="section-title">Definitions</h3>
+            <div id="definitionsContainer">
 
-    <a href="beginner/Rock-Paper-Scissors/"><i class="fas fa-gamepad"></i><span>Rock Paper Scissors</span></a>
+            </div>
+         </div>
 
-    <a href="beginner/StopWatch/"><i class="fas fa-stopwatch"></i><span>StopWatch</span></a>
+         <!-- *Synonyms -->
+         <div class="words-container">
+            <h3 class="section-title">Synonyms</h3>
+            <div class="word-list" id="synonymsList">
 
-    <a href="beginner/TemperatureConverter/"><i class="fas fa-temperature-high"></i><span>Temperature
-        Converter</span></a>
+            </div>
+         </div>
 
-    <!-- *Intermidate -->
-    <a href="intermediate/Clock/"><i class="fas fa-clock"></i><span>Clock</span></a>
+         <!-- *Antonyms -->
+         <div class="words-container">
+            <h3 class="section-title">Antonyms</h3>
+            <div class="word-list" id="antonymsList">
+            </div>
+         </div>
+      </div>
 
-    <a href="intermediate/Directional_Stopwatch/"><i class="fas fa-arrows-up-down-left-right"></i><span>Directional
-        Stopwatch</span></a>
+      <!-- *Empty State -->
+      <div class="empty-state fade-in" id="emptyState">
+         <h3>Welcome to your Dictionary!</h3>
+         <p>Search for any word above to get started. You'll see definitions, pronunciations, synonyms, and more.</p>
+      </div>
 
-    <a href="intermediate/Number_Base_converter/"><i class="fas fa-shuffle"></i><span>Number Base
-        Converter</span></a>
+   </div>
 
-    <a href="intermediate/Number_Guess_Game/"><i class="fa-light fa-face-thinking"></i><span>Number Guess
-        game</span>
+   <!-- *Sidebar section -->
+   <button class="bookmarkFolder"><i class="fa-solid fa-folder-bookmark"></i></button>
+   <section class="sidebar hidden">
+      <h3>BookMarks</h3>
+      <aside id="bookmarkList">
+      </aside>
+   </section>
 
-      <a href="intermediate/Random_Fact/"><i class="fa-solid fa-lightbulb-exclamation-on"></i><span>Random
-          Fact</span></a>
+   <!-- *hidden audio element for pronunciation -->
+   <audio id="pronunciationAudio" preload="none"></audio>
 
-      <a href="intermediate/Toast_Notification/"><i class="fas fa-bell"></i><span>Toast Notification</span></a>
-
-      <a href="intermediate/Weather_App/"><i class="fas fa-cloud-sun"></i><span>Weather App</span></a>
-
-      <!-- *Advanced -->
-      <a href="advanced/QR_Code/"><i class="fas fa-qrcode"></i><span>QR code</span></a>
-
-      <a href="advanced/Dictionary/" target="_blank"><i class="fas fa-book"></i><span>Dictionary</span></a>
-
-      <a href="advanced/Word_Guess_Game/"><i class="fa-light fa-face-thinking"></i><span>Guess Word game</span></a>
-    </a>
-  </main>
+   <script src="script.js"></script>
 </body>
 
 </html>
